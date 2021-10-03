@@ -3,7 +3,7 @@ import {
   assertExists,
 } from "https://deno.land/std@0.88.0/testing/asserts.ts";
 
-import * as API from "../mock-api.ts";
+import * as API from "../api.ts";
 
 Deno.test("can fetch and access through interface", async () => {
   const results = await API.getExpeditions("50");
