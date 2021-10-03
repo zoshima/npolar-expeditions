@@ -4,14 +4,14 @@ Clone the repository (or download one of the binaries), then invoke the binary
 from command line:
 
 ```
-./program <NUM>
+./program_linux <NUM>
 ```
 
 Where `<NUM>` is the number of expeditions to fetch. Defaults to `all`.
 
 The resulting output can be found in the `out/output.ndjson` file.
 
-# Developer prerequisites
+# Developer commands
 
 Deno (https://deno.land/#installation)
 
@@ -30,6 +30,7 @@ deno test --allow-all
 ## Compile
 
 ### Unix
+
 ```
 deno compile --allow-net --allow-read --allow-write --output ./bin/program ./main.ts
 ```
